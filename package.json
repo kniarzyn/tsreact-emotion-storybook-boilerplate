@@ -19,12 +19,16 @@
   },
   "homepage": "https://github.com/kniarzyn/tsreact-emotion-storybook-boilerplate#readme",
   "devDependencies": {
+    "@types/react": "^16.3.16",
+    "@types/react-dom": "^16.0.6",
     "awesome-typescript-loader": "^5.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-react-app": "^3.1.1",
     "babel-preset-stage-2": "^6.24.1",
     "react-hot-loader": "^4.2.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.9.1",
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.2",
     "webpack-dev-server": "^3.1.4"
