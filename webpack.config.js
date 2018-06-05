@@ -1,8 +1,11 @@
+const webpack = require("webpack")
+
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = "development"
 }
 module.exports = {
   entry: [
+    "react-hot-loader/patch",
     './src/index.js'
   ],
   module: {
@@ -23,6 +26,11 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist'
-  }
+    contentBase: './dist',
+    hot: true
+  },
+  devtool: "cheap-module-eval-source-map",
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
