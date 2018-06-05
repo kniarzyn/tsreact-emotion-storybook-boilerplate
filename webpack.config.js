@@ -14,11 +14,15 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ["babel-loader"]
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        loader: "awesome-typescript-loader"
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['.ts', 'tsx', '.js', '.jsx']
   },
   output: {
     path: __dirname + '/dist',
@@ -29,7 +33,7 @@ module.exports = {
     contentBase: './dist',
     hot: true
   },
-  devtool: "cheap-module-eval-source-map",
+  devtool: "source-map",
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ]
