@@ -1,0 +1,20 @@
+{
+  "name": "my_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kniarzyn/tsreact-emotion-storybook-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kniarzyn/tsreact-emotion-storybook-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kniarzyn/tsreact-emotion-storybook-boilerplate#readme"
+}
