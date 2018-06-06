@@ -1,9 +1,9 @@
-import * as React from "react"
-import styled from 'react-emotion'
+import * as React from "react";
+import styled from 'react-emotion';
 
-const H4 = styled('button'){
-  font-size: 20px,
-  color: red
-}
+const H4 = styled<{}, "button">("button")({
+    color: "red",
+    fontSize: "20px",
+});
 
-export default () => (<H4 href="#">Takie tam: {Date.now()}</H4>)
+export default () => (<H4>Takie tam: {Date.now()}</H4>);
