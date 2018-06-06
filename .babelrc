@@ -1,3 +1,4 @@
 {
-  "presets": ["react-app", "stage-2"]
+  "presets": ["react-app", "stage-2"],
+  "plugins": [["emotion", { "sourceMap": true, "autoLabel": true }]]
 }
